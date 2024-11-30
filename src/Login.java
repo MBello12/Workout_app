@@ -20,6 +20,7 @@ public class Login {
         if (storage.validCredentials(username, password)) {
             System.out.println("Login successful!");
             User user = storage.getUser(username);
+
             runBmiCalculator(user); // Run BMI calculator after login
         } else {
             System.out.println("Invalid username or password.");
@@ -54,5 +55,29 @@ public class Login {
         }
 
         System.out.println("BMI has been recorded.");
+
+        // Prompt user for fitness goal
+        System.out.println("What is your fitness goal?");
+        System.out.println("1. Gain weight");
+        System.out.println("2. Lose weight");
+        System.out.println("3. Gain muscle");
+        int goalChoice = scanner.nextInt();
+        scanner.nextLine(); // Consume newline
+
+        switch (goalChoice) {
+            case 1:
+                user.setGoal("Gain weight");
+                break;
+            case 2:
+                user.setGoal("Lose weight");
+                break;
+            case 3:
+                user.setGoal("Gain muscle");
+                break;
+            default:
+                System.out.println("Invalid choice, no goal set.");
+        }
+        System.out.println("Your goal is: " + user.getGoal());
+        System.out.println("Goal has been recorded.");
     }
 }
