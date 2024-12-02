@@ -7,8 +7,6 @@ public class Main {
         System.out.println("|            WORKOUT            |");
         System.out.println("|              APP              |");
         System.out.println("=================================");
-        System.out.println("Test");
-        System.out.println("Test2");
         Storage storage = new Storage();
         Scanner scanner = new Scanner(System.in);
         Login login = new Login(storage);
