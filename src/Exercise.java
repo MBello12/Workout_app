@@ -1,4 +1,3 @@
-
 public class Exercise {
 
     // Method to display exercises based on the user's goal
