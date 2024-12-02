@@ -12,6 +12,7 @@ public class Main {
 
         while (true) {
             System.out.println("1. Register\n2. Login\n3. Exit");
+            System.out.println("Enter selection:");
             int choice = scanner.nextInt();
             scanner.nextLine(); // Consume newline
 
