@@ -3,7 +3,8 @@ public class Diet {
 
     // Method to display the diet plan based on the user's goal and their profile
     public static void displayDietPlan(String goal, User user) {
-        System.out.println("\n*** Custom Diet Plan for " + goal + " ***");
+        System.out.println("\n--- Custom Diet Plan for " + goal + " ---");
+        System.out.println("-------------------------------------------");
 
         // Customizing the diet based on the goal
         if (goal.equals("Lose weight")) {
@@ -28,7 +29,8 @@ public class Diet {
 
     // Displaying recommended supplements for the user
     public static void displaySupplements() {
-        System.out.println("\n*** Recommended Supplements ***");
+        System.out.println("\n--- Recommended Supplements ---");
+        System.out.println("---------------------------------");
         System.out.println("1. Protein Powder (Whey or Plant-Based)");
         System.out.println("2. Creatine");
         System.out.println("3. Multivitamins");
@@ -37,7 +39,8 @@ public class Diet {
 
     // Displaying a daily workout schedule
     public static void displayWorkoutSchedule() {
-        System.out.println("\n*** Daily Workout Schedule ***");
+        System.out.println("\n--- Daily Workout Schedule ---");
+        System.out.println("--------------------------------");
         System.out.println("7:00 AM - Morning Routine: Warm-Up (Jumping Jacks, Dynamic Stretches)");
         System.out.println("7:30 AM - Strength Training (Squats, Bench Press, Deadlifts, Pull-Ups)");
         System.out.println("12:00 PM - Cardio (Running on Treadmill or Outdoor Jogging)");
