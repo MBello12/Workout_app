@@ -2,10 +2,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("*********************************");
-        System.out.println("*        THE WORKOUT APP        *");
-        System.out.println("*********************************");
-
+        System.out.println("=================================");
+        System.out.println("|              THE              |");
+        System.out.println("|            WORKOUT            |");
+        System.out.println("|              APP              |");
+        System.out.println("=================================");
         Storage storage = new Storage();
         Scanner scanner = new Scanner(System.in);
         Login login = new Login(storage);
