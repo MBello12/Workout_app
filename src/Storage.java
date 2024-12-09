@@ -1,6 +1,7 @@
 import java.util.HashMap;
 
 public class Storage {
+    // Uses a java framework hashmaps to help with storage
     private HashMap<String, User> users = new HashMap<>();
 
     public void addUser(User user) {

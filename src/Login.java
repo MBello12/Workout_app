@@ -6,7 +6,7 @@ public class Login {
     public Login(Storage storage) {
         this.storage = storage;
     }
-
+    // User registration
     public void registration(String username, String password) {
         if (storage.getUser(username) != null) {
             System.out.println("Username exists!");
@@ -15,7 +15,7 @@ public class Login {
             System.out.println("User registered successfully.");
         }
     }
-
+        // User login
     public void loginUser(String username, String password) {
         if (storage.validCredentials(username, password)) {
             System.out.println("Login successful!");
@@ -24,7 +24,7 @@ public class Login {
             System.out.println("Invalid username or password.");
         }
     }
-
+        // BMI calculator input
     public void runBmiCalculator(User user) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter your weight in pounds: ");
